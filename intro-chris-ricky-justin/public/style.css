@@ -1,0 +1,9 @@
+* {
+  background-color: rgb(172, 172, 246);
+  color: rgb(112, 12, 155);
+}
+
+h1 {
+  display: grid;
+  justify-content: center;
+}
