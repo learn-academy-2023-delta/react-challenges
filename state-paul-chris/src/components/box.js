@@ -16,11 +16,10 @@ const Box = () => {
 
   return (
     <>
-    <table style={{width: "50px", border: "1px solid black"}}>
+    <table style={{width: "50px", border: "1px solid black", margin: "25px"}}>
            <tr>
             <td style={{height: "50px", backgroundColor: color}} onClick={handleClick}>
                {color}
-
             </td> 
              
           </tr>
