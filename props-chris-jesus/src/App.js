@@ -1,6 +1,5 @@
 
 import './App.css';
-import RollDice from './components/RollDice';
 import Box from './components/Box.js';
 import React, { useState } from 'react';
 const App = () => {
@@ -8,13 +7,14 @@ const App = () => {
   var randomNumber = () => {
     return Math.ceil(Math.random() * 6)
   }
-  // const [numberResult, setNumberResult] = useState(randomNumber)
   const [numberResult, setNumberResult] = useState(randomNumber)
-
+  var useNumber = () => {
+    return setNumberResult(randomNumber())
+  }
 
   return (
     <>
-    <Box rollValue={randomNumber()}/>
+    <Box onClick={useNumber} rollValue={randomNumber()}/>
     </>
   )
 }
