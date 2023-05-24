@@ -25,6 +25,13 @@
   height:auto;
 }
 .Board{
-  display: flex;
+   display: flex;
   justify-content: space-around;
+}
+body{
+  background-image: linear-gradient(red, yellow, green);
+  background-size: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
 }
