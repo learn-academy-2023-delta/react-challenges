@@ -1,10 +1,11 @@
 import React, { useState } from "react"
 
-const Rolls = () => {
+const Rolls = (props) => {
     return (
 
     <>
-    <h1>Hello!</h1>
+    <h1 className = "Dice Rolls" ><ol>{props.diceRolls.map(value => <li>{value}</li>)}
+    </ol></h1>
     </>
     )
 }

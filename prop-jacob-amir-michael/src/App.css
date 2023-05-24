@@ -1,10 +1,30 @@
 .App {
   text-align: center;
+  
 }
 
 
 .Dice {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
   border: 2px solid black;
   height: 200px;
   width: 200px;
+  margin: 50px;
+
+}
+
+.Image{
+  height: 200px;
+  width: 200px;
+}
+.Rolls{
+  height:auto;
+}
+.Board{
+  display: flex;
+  justify-content: space-around;
 }

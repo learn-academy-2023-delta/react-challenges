@@ -10,7 +10,10 @@ const Dice = (props) =>{
 
     return (
         <>
-        <div  className = "Dice" onClick = {props.rollDice}>{props.diceNumberasdf}</div>
+        <div  className = "Dice" onClick = {props.rollDice}>
+            <img className = "Image" src={props.diceNumber}/>
+            
+            </div>
         
         </>
         
