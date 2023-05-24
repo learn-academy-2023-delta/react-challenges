@@ -7,6 +7,7 @@
   border: 2px solid black;
   background-color: white;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -15,6 +16,25 @@
 .clickBox {
   width: 100px;
   height: 100px;
+  border: 1px solid blue;
+  display: flex;
+  justify-content: center;
+}
+
+.historyBox {
+  width: 400px;
+  height: 400px;
+  border: 2px solid black;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.insideHistoryBox {
+  width: 50%;
+  height: 300px;
   border: 1px solid blue;
   display: flex;
   justify-content: center;
