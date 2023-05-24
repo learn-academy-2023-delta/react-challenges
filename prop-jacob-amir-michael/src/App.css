@@ -1,0 +1,10 @@
+.App {
+  text-align: center;
+}
+
+
+.Dice {
+  border: 2px solid black;
+  height: 200px;
+  width: 200px;
+}
