@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from "react";
+import FoodList from "./components/FoodList.js";
+import FoodOrder from "./components/FoodOrder.js";
 
-function App() {
+const App = () => {
+  const [menu, setMenu] = useState([
+    {name: "sushi", ordered: false, price: "7.99"},
+    {name: "tempura", ordered: false, price: "11.99"},
+    {name: "ramen", ordered: false, price: "12.99"},
+    {name: "sashimi", ordered: false, price: "13.99"},
+    {name: "udon", ordered: false, price: "10.99"},
+  ])
+  const [order, setOrder] = useState([])
+
+  const addToOrder = (food) => {
+    return setOrder(order.push(food))
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  <>
+    <h1>Japanese Cuisine</h1>
+    {menu.map((item, index) => {
+      return (
+        <FoodList item={item} index={index} key={index} addToOrder={addToOrder}/>
+      )
+    })}
+  <FoodOrder order={order}/>
+  </>
+  )
 }
 
-export default App;
+export default App
